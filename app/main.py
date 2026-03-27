@@ -4,9 +4,14 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return { "msg": "hellooooo local docker" }
+    return { "msg": "hej  local docker" }
 
 
-@app.get("/hello")
+@app.get("/api/ip")
+def ip():
+    return { "ip": "hello ip" }
+
+
+    @app.get("/hello")
 def hello():
-    return { "msg": "Hello aurora" }
+    return { "msg": "hello" }
