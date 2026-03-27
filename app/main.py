@@ -12,6 +12,6 @@ def ip():
     return { "ip": "hello ip" }
 
 
-    @app.get("/hello")
+@app.get("/hello")
 def hello():
-    return { "msg": "hello" }
+    return { "msg": "helllllo" }
